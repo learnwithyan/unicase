@@ -1,0 +1,90 @@
+{
+  "name": "unicase",
+  "displayName": "UniCase case coverter",
+  "description": "UniCase extension for Visual Studio Code, a powerful tool designed to streamline text transformation within your code. This extension offers a seamless experience for converting text to various cases, including uppercase, lowercase, title case, and sentence case. Whether you're working on documentation, coding comments, or any text within your codebase, UniCase enhances your productivity by providing quick and intuitive transformations, helping you maintain consistent and readable code effortlessly. Say goodbye to manual case adjustments and elevate your coding experience with the UniCase extension for Visual Studio Code",
+  "version": "1.1.0",
+  "publisher": "learnwithyan",
+  "icon": "images/logo_128.png",
+  "bugs": {
+    "url": "https://github.com/learnwithyan/unicase",
+    "email": "learnwithyan@hotmail.com"
+  },
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "unicase.com1",
+        "title": "%unicase.com1.title%",
+        "icon": "$(sort-precedence)"
+      },
+      {
+        "command": "unicase.com2",
+        "title": "%unicase.com2.title%",
+        "icon": "$(sort-precedence)"
+      },
+      {
+        "command": "unicase.com3",
+        "title": "%unicase.com3.title%",
+        "icon": "$(sort-precedence)"
+      },
+      {
+        "command": "unicase.com4",
+        "title": "%unicase.com4.title%",
+        "icon": "$(sort-precedence)"
+      },
+      {
+        "command": "unicase.com5",
+        "title": "%unicase.com5.title%",
+        "icon": "$(sort-precedence)"
+      },
+      {
+        "command": "unicase.com6",
+        "title": "%unicase.com6.title%",
+        "icon": "$(sort-precedence)"
+      }
+    ]
+  },
+  "localize": [
+    "package.nls.json",
+    "package.bg.nls.json",
+    "package.cs.nls.json",
+    "package.de.nls.json",
+    "package.es.nls.json",
+    "package.fr.nls.json",
+    "package.hu.nls.json",
+    "package.it.nls.json",
+    "package.ko.nls.json",
+    "package.pl.nls.json",
+    "package.pt.nls.json",
+    "package.ru.nls.json",
+    "package.tr.nls.json",
+    "package.zh.nls.json"
+  ],
+  "configuration": {
+    "title": "unicase Configarations",
+    "properties": {
+      "unicase.lineBreak": {
+        "type": "string",
+        "default": "\n",
+        "scope": "resource",
+        "description": "Description of your setting"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/learnwithyan/unicase.git"
+  },
+  "dependencies": {
+    "vscode-nls": "^5.2.0"
+  }
+}
